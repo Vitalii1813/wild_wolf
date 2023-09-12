@@ -1,7 +1,79 @@
+/* Стилі для заголовка (header) */
+.header {
+  background-color: #333; /* Задайте бажаний колір фону */
+  color: #fff; /* Задайте бажаний колір тексту */
+  padding: 20px 0; /* Задайте бажаний внутрішній відступ по вертикалі і горизонталі */
+}
+
+/* Стилі для контейнера */
+.container {
+  display: flex; /* Встановіть властивість display на flex, щоб дочірні елементи розташовувалися в ряд */
+  justify-content: space-between; /* Рівномірно розподіліть простір між елементами відлівки в контейнері */
+  align-items: center; /* Вирівняйте дочірні елементи по центру по вертикалі */
+  max-width: 1200px; /* Задайте максимальну ширину контейнера, якщо потрібно */
+  margin: 0 auto; /* Це центрує контейнер по горизонталі */
+  padding: 0 20px; /* Задайте внутрішній відступ по горизонталі */
+}
+
+/* Стилі для списку (ul) */
 ul {
-  list-style: none;
+  list-style: none; /* Забороніть маркери списку */
   padding: 0;
   margin: 0;
   display: flex;
-  background-color: #007bff;
+}
+
+/* Стилі для пунктів списку (li) */
+ul li {
+  margin-right: 25px; /* Задайте відступ між пунктами списку, якщо потрібно */
+  font-size: 16px; /* Задайте бажаний розмір шрифту */
+  text-transform: uppercase;
+}
+
+ul li:last-child{
+  margin-right: 0;
+}
+
+/* Стилі для кнопки GET STARTED */
+button {
+  background-color: white; /* Задайте бажаний колір фону кнопки */
+  color: black; /* Задайте бажаний колір тексту кнопки */
+  padding: 10px 20px; /* Задайте відступи кнопки */
+  border: none; /* Видаліть рамку */
+  cursor: pointer; /* Змініть вигляд курсору при наведенні на кнопку */
+  border-radius: 10px;
+}
+
+/* Стилі для кнопки GET STARTED при наведенні */
+button:hover {
+  background-color: #ff3300; /* Змініть колір фону кнопки при наведенні */
+}
+
+.header_logo{
+  font-family: Futura PT, Trebuchet MS, Arial, system-ui;
+  font-size: 42px;
+}
+
+/* Стилі для контейнера .img_logo */
+.img_logo {
+
+  display: flex; /* Встановлюємо flex-контейнер для розташування зображень поруч */
+  align-items: center; /* Вирівнюємо зображення по вертикалі по центру */
+  padding: 10px; /* Встановлюємо бажаний внутрішній відступ для контейнера */
+}
+
+/* Стилі для блоку .user_img і .shop_img */
+.user_img,
+.shop_img {
+  background-color: #fff; /* Встановлюємо білий фон */
+  margin: 0 10px; /* Встановлюємо відступ між зображеннями */
+  border-radius: 20px;
+}
+
+/* Стилі для зображень user і bag */
+.user_img img,
+.shop_img img {
+  max-width: 30px; /* Встановлюємо максимальну ширину зображень */
+  height: auto; /* Зберігаємо пропорції зображень */
+  padding: 5px;
 }

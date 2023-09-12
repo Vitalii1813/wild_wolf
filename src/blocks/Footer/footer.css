@@ -1,0 +1,13 @@
+/* Styles for the footer_main container */
+.footer_main {
+    background-color: #333; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    padding: 20px; /* Set padding for inner content */
+    text-align: center; /* Center-align the text within the footer */
+}
+
+/* Styles for the h1 element within the footer */
+.footer_main h1 {
+    font-size: 24px; /* Set your desired font size */
+    margin: 0; /* Remove any default margin */
+}
