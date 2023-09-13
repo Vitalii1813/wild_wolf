@@ -6,6 +6,7 @@ export function Header() {
     return (
         <>
             <div className="header">
+
                 <div className="container">
                         <ul>
                             <li>Shop</li>
@@ -29,6 +30,24 @@ export function Header() {
                                     </div>
                                 </div>
 
+
+
+                </div>
+
+                <div className="content_header">
+                    <div className="fix_content">
+                        <h1 className="title_content_header">
+                            Pup-grade your deo game!
+                        </h1>
+                        <p className="sub_content">
+                            New Limited Edition Sausage Dog case and
+                            luxurious Amber & Oud deodorant scent
+                        </p>
+
+                        <button className="pink_start">
+                            GET STARTED
+                        </button>
+                    </div>
                 </div>
 
                 </div>

@@ -1,8 +1,9 @@
 /* Стилі для заголовка (header) */
 .header {
-  background-color: #333; /* Задайте бажаний колір фону */
+  background:linear-gradient(to bottom, rgb(243,142,165),rgb(255,159,178)); /* Задайте бажаний колір фону */
   color: #fff; /* Задайте бажаний колір тексту */
   padding: 20px 0; /* Задайте бажаний внутрішній відступ по вертикалі і горизонталі */
+  font-family: Futura PT, Trebuchet MS, Arial, system-ui;
 }
 
 /* Стилі для контейнера */
@@ -52,6 +53,7 @@ button:hover {
 .header_logo{
   font-family: Futura PT, Trebuchet MS, Arial, system-ui;
   font-size: 42px;
+  font-style: italic;
 }
 
 /* Стилі для контейнера .img_logo */
@@ -75,15 +77,55 @@ button:hover {
 .user_img,
 .shop_img {
   background-color: #fff; /* Встановлюємо білий фон */
-  margin: 0 15px; /* Встановлюємо відступ між зображеннями */
+  margin: 0 8px; /* Встановлюємо відступ між зображеннями */
   border-radius: 20px;
 }
 
 /* Стилі для зображень user і bag */
 .user_img img,
 .shop_img img {
-  max-width: 30px; /* Встановлюємо максимальну ширину зображень */
+  max-width: 13px; /* Встановлюємо максимальну ширину зображень */
   height: auto; /* Зберігаємо пропорції зображень */
-  padding: 5px;
+  padding: 10px;
 }
 
+.content_header{
+  display: flex;
+  max-width: 1200px;
+  max-height: 800px;
+  border: 2px solid white;
+  margin:40px 150px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.title_content_header,.sub_content{
+  color: white;
+  font-size: 56px;
+  font-family: Futura PT, Trebuchet MS, Arial, system-ui;
+}
+
+.sub_content{
+  border: 2px solid white;
+  max-width: 350px;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.fix_content{
+  text-align: left;
+  margin-left: 80px;
+  border: 2px solid white;
+  max-width: 450px;
+}
+
+.pink_start{
+  padding: 18px 10px;
+  background: deeppink;
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 13px;
+}
