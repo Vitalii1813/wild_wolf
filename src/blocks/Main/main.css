@@ -60,3 +60,19 @@
     margin: 0 15px;
     font-size: 23px;
 }
+
+.wild_reviews_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: 2px solid black;
+    max-height: 400px;
+    font-size: 32px;
+}
+
+.container_wild_reviews_text{
+    max-width: 520px;
+    height: 200px;
+    border: 2px solid red;
+}

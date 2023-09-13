@@ -24,3 +24,5 @@ export class Sausage extends Component<{ text: any, title: any, color: string }>
         );
     }
 }
+
+export default Sausage;
