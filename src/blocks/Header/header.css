@@ -35,8 +35,8 @@ ul li:last-child{
 }
 
 /* Стилі для кнопки GET STARTED */
-button {
-  background-color: white; /* Задайте бажаний колір фону кнопки */
+.get_started_btn{
+  background-color: greenyellow; /* Задайте бажаний колір фону кнопки */
   color: black; /* Задайте бажаний колір тексту кнопки */
   padding: 10px 20px; /* Задайте відступи кнопки */
   border: none; /* Видаліть рамку */
@@ -55,18 +55,27 @@ button:hover {
 }
 
 /* Стилі для контейнера .img_logo */
-.img_logo {
 
+.right_menu{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid white;
+  margin-left: 50px;
+}
+
+.img_logo {
   display: flex; /* Встановлюємо flex-контейнер для розташування зображень поруч */
   align-items: center; /* Вирівнюємо зображення по вертикалі по центру */
-  padding: 10px; /* Встановлюємо бажаний внутрішній відступ для контейнера */
+  border: 2px solid white;
+  margin-left: 10px;
 }
 
 /* Стилі для блоку .user_img і .shop_img */
 .user_img,
 .shop_img {
   background-color: #fff; /* Встановлюємо білий фон */
-  margin: 0 10px; /* Встановлюємо відступ між зображеннями */
+  margin: 0 15px; /* Встановлюємо відступ між зображеннями */
   border-radius: 20px;
 }
 
@@ -77,3 +86,4 @@ button:hover {
   height: auto; /* Зберігаємо пропорції зображень */
   padding: 5px;
 }
+

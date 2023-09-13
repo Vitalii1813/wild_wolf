@@ -7,29 +7,30 @@ export function Header() {
         <>
             <div className="header">
                 <div className="container">
-                <ul>
-                    <li>Shop</li>
-                    <li>Learn</li>
-                    <li>Refer a friend</li>
-                    <li>Pre order shower gel</li>
-                </ul>
-                    <div className="header_logo">
-                        Wild
-                    </div>
-                    <div className="right_menu">
-
-                        <button>GET STARTED</button>
-                            <div className="img_logo">
-                                <div className="user_img">
-                                    <img src={user} alt="User"/>
-                                </div>
-                                <div className="shop_img">
-                                    <img src={bag} alt="Shop"/>
-                                </div>
+                        <ul>
+                            <li>Shop</li>
+                            <li>Learn</li>
+                            <li>Refer a friend</li>
+                            <li>Pre order shower gel</li>
+                        </ul>
+                            <div className="header_logo">
+                                Wild
                             </div>
-                        </div>
+                            <div className="right_menu">
 
-                    </div>
+                                <button className="get_started_btn">GET STARTED</button>
+                                    <div className="img_logo">
+                                        <div className="user_img">
+                                            <img src={user} alt="User"/>
+                                        </div>
+                                        <div className="shop_img">
+                                            <img src={bag} alt="Shop"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                </div>
+
                 </div>
         </>
     );
