@@ -1,9 +1,17 @@
-import React, { Component } from 'react';
+import React, {Component, useEffect, useState} from 'react';
 import '../blocks/Main/main.css';
 
 // Імпортуємо компоненту Reviews з файлу Reviews.tsx
 import Reviews from '../DumbComponents/Reviews';
 import Sausage from '../DumbComponents/Sausage';
+import {VideoPlayer} from "../DumbComponents/Video";
+import Shampoo from "../DumbComponents/Shampoo";
+import deodorant from '../img/deodorant_pink.png';
+import minideo from '../img/mini-deos.png';
+import refills from '../img/refills.png';
+import bars from '../img/shampoo_bars.png';
+import soaps from '../img/shampoo_soaps.png';
+import shampoo from "../DumbComponents/Shampoo";
 
 interface MyComponentProps {}
 
@@ -71,8 +79,17 @@ export class MyComponent extends Component<MyComponentProps, MyComponentState> {
                     </div>
 
                     <div className="work_video_container">
-                        <h1>How it works!</h1>
+                            <VideoPlayer></VideoPlayer>
                     </div>
+
+                    <div className="mini_shampoo_items">
+                            <Shampoo color="white" title="Deodorant" text="Plans from £10" imageSrc={deodorant}/>
+                            <Shampoo color="white" title="Refills" text="From £6" imageSrc={refills}/>
+                            <Shampoo color="white" title="Mini Deos" text="From £3.5" imageSrc={minideo}/>
+                            <Shampoo color="white" title="Shampoo Bars" text="From £8.5" imageSrc={bars}/>
+                            <Shampoo color="white" title="Soaps" text="Plans from £4" imageSrc={soaps}/>
+                    </div>
+
                 </div>
             </div>
         );

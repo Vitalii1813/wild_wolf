@@ -4,7 +4,6 @@
     flex-direction: column;
     border: 2px solid black;
     align-items: center;
-    height: 1000px;
     background-color: #f0f0f0; /* Задайте бажаний колір фону */
     padding: 20px; /* Задайте відступи для внутрішнього вмісту */
     font-family: Futura PT, Trebuchet MS, Arial, system-ui;
@@ -75,4 +74,93 @@
     max-width: 520px;
     height: 200px;
     border: 2px solid red;
+}
+
+.how_works_title{
+    display: flex;
+    justify-content: center;
+    font-size: 56px;
+    border: 2px solid black;
+    height: 100px;
+    width: 100%;
+}
+
+.work_video_container{
+    display: flex;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.white_catalog_view,.video_content{
+    width: 350px;
+    height: 600px;
+    background: #e87575;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.video_content{
+    width: 500px;
+    background: orange;
+    border-radius: 30px;
+}
+
+.white_catalog_view{
+    height: 550px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.video_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.catalog_white_btn{
+    margin-top: 50px;
+    height: 50px;
+    color: white;
+    background: #046e5d;
+}
+
+.small_block_deo{
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(29,127,117);
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+.mini_shampoo_items{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.new_shampoo_item{
+    width: 180px;
+    height: 240px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.new_shampoo_item h2{
+    margin: 0 auto;
+}
+
+.new_shampoo_item p{
+    margin-top: 5px;
+    font-size: 15px;
 }

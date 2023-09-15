@@ -2,6 +2,7 @@ import '../blocks/Header/header.css';
 import React from "react";
 import user from '../img/user.png';
 import bag from '../img/bag.png';
+import arrow from "../img/right.png";
 export function Header() {
     return (
         <>
@@ -19,7 +20,9 @@ export function Header() {
                             </div>
                             <div className="right_menu">
 
-                                <button className="get_started_btn">GET STARTED</button>
+                                <button className="get_started_btn">
+                                    GET STARTED
+                                    <img width="17"  height="17" src={arrow} alt="right"></img></button>
                                     <div className="img_logo">
                                         <div className="user_img">
                                             <img src={user} alt="User"/>
@@ -46,6 +49,7 @@ export function Header() {
 
                         <button className="pink_start">
                             GET STARTED
+                            <img width="17"  height="17" src={arrow} alt="right"></img>
                         </button>
                     </div>
                 </div>

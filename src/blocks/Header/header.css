@@ -43,11 +43,12 @@ ul li:last-child{
   border: none; /* Видаліть рамку */
   cursor: pointer; /* Змініть вигляд курсору при наведенні на кнопку */
   border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 /* Стилі для кнопки GET STARTED при наведенні */
 button:hover {
-  background-color: #ff3300; /* Змініть колір фону кнопки при наведенні */
+  transform: scale(1.1); /* Збільшення об'єкта при наведенні */
 }
 
 .header_logo{
@@ -121,9 +122,9 @@ button:hover {
 }
 
 .pink_start{
-  padding: 18px 10px;
+  padding: 10px 12px;
   background: deeppink;
-  width: 120px;
+  width: 140px;
   border: none;
   border-radius: 10px;
   color: white;
