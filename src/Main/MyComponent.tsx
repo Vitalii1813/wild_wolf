@@ -27,6 +27,44 @@ export class MyComponent extends Component<MyComponentProps, MyComponentState> {
         this.state = {
             textIndex: 0,
         };
+        
+
+        const modal: HTMLElement | null = document.querySelector('.modal');
+const overlay: HTMLElement | null = document.querySelector('.overlay');
+const btnCloseModal: HTMLElement | null = document.querySelector('.close-modal');
+const btnsOpenModal: NodeListOf<HTMLElement> = document.querySelectorAll('.show-modal');
+
+const openModal = () => {
+  if (modal && overlay) {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+  }
+};
+
+const closeModal = () => {
+  if (modal && overlay) {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+  }
+};
+
+for (let i = 0; i < btnsOpenModal.length; i++) {
+  btnsOpenModal[i].addEventListener('click', openModal);
+}
+
+if (btnCloseModal) {
+  btnCloseModal.addEventListener('click', closeModal);
+}
+
+if (overlay) {
+  overlay.addEventListener('click', closeModal);
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
 
         this.textArray = [
             "Proved that natural deos do work just as well as antiperspirant",
@@ -43,9 +81,13 @@ export class MyComponent extends Component<MyComponentProps, MyComponentState> {
         this.setState({ textIndex: newIndex });
     };
 
+    Rose = () =>{
+        alert('Roses');
+
+    }
+
     render() {
         const currentText = this.textArray[this.state.textIndex];
-
         return (
             <div>
                 <div className="main_content">
@@ -69,7 +111,6 @@ export class MyComponent extends Component<MyComponentProps, MyComponentState> {
                             <Reviews title='GOOD HOUSEKEEPING' onClick={this.handleTextChange} />
 
 
-
                         </div>
                         <div className="wild_reviews_text">
                             <div className="container_wild_reviews_text">
@@ -90,6 +131,7 @@ export class MyComponent extends Component<MyComponentProps, MyComponentState> {
                             <Shampoo color="white" title="Soaps" text="Plans from £4" imageSrc={soaps}/>
                     </div>
 
+                    <button className='vika_cool' onClick={this.Rose}>Для тебе</button>
                 </div>
             </div>
         );

@@ -164,3 +164,18 @@
     margin-top: 5px;
     font-size: 15px;
 }
+
+.vika_cool{
+    background-color: rgb(0, 98, 255);
+    border-radius: 25px;
+    border: none;
+    padding: 20px;
+    color: rgb(244, 244, 245);
+    margin-bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.vika_cool:hover{
+    background-color: rgb(255, 34, 0);
+}
